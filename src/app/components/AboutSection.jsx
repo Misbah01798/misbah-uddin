@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Spline from "@splinetool/react-spline";
 
 const TAB_DATA = [
   {
@@ -53,7 +54,8 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/code2.jpg" width={700} height={700} />
+        {/* <Image src="/images/code2.jpg" width={700} height={700} /> */}
+        <Spline scene="https://my.spline.design/3dtextbluecopy-988de763003ebadb3f82a331995ca333/"></Spline>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
